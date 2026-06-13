@@ -1,0 +1,507 @@
+{
+  "generated": "2026-06-13T13:57:39.841624Z",
+  "roster": [
+    {
+      "number": "3",
+      "name": "Willow Norton",
+      "position": "3B",
+      "position2": "P",
+      "bats": "R",
+      "throws": "R",
+      "notes": "Strong arm, good glove, good knowledge"
+    },
+    {
+      "number": "17",
+      "name": "Ben Keene",
+      "position": "1B",
+      "position2": "RCF",
+      "bats": "L",
+      "throws": "R",
+      "notes": "Strong bat, Good Glove"
+    },
+    {
+      "number": "40",
+      "name": "Teague Sullivan",
+      "position": "C",
+      "position2": "LCF",
+      "bats": "R",
+      "throws": "R",
+      "notes": "Great Glove, Good Bat, Good Knowledge"
+    },
+    {
+      "number": "24",
+      "name": "Ryder Sherwood",
+      "position": "2B",
+      "position2": "LF",
+      "bats": "R",
+      "throws": "R",
+      "notes": "Incredibly Fast"
+    },
+    {
+      "number": "9",
+      "name": "Tyson Leduc",
+      "position": "P",
+      "position2": "SS",
+      "bats": "L",
+      "throws": "R",
+      "notes": "Strong all around"
+    },
+    {
+      "number": "23",
+      "name": "Logan Bradly",
+      "position": "2B",
+      "position2": "LF",
+      "bats": "R",
+      "throws": "R",
+      "notes": "Newer but has potential"
+    },
+    {
+      "number": "10",
+      "name": "Emmett Riviere",
+      "position": "P",
+      "position2": "SS",
+      "bats": "R",
+      "throws": "R",
+      "notes": "Strong all around Strong pitcher"
+    },
+    {
+      "number": "39",
+      "name": "Siobhan Sasseville",
+      "position": "3B",
+      "position2": "RF",
+      "bats": "R",
+      "throws": "R",
+      "notes": "Consistent glove, decent arm, ok bat"
+    },
+    {
+      "number": "8",
+      "name": "Dylan Hurbert",
+      "position": "1B",
+      "position2": "LF",
+      "bats": "R",
+      "throws": "R",
+      "notes": "Strong arm, strong bat, good knowledge"
+    },
+    {
+      "number": "4",
+      "name": "Carlee Longbottom",
+      "position": "2B",
+      "position2": "RF",
+      "bats": "R",
+      "throws": "R",
+      "notes": ""
+    },
+    {
+      "number": "1",
+      "name": "Declan Sullivan",
+      "position": "SS",
+      "position2": "RCF",
+      "bats": "R",
+      "throws": "R",
+      "notes": ""
+    },
+    {
+      "number": "",
+      "name": "Luke (Pickup)",
+      "position": "P",
+      "position2": "",
+      "bats": "R",
+      "throws": "R",
+      "notes": ""
+    }
+  ],
+  "schedule": [
+    {
+      "id": "game_1780367332688",
+      "date": "2026-06-02",
+      "time": "20:30",
+      "opponent": "Woodview",
+      "location": "Woodview (Away)",
+      "result": "W"
+    },
+    {
+      "id": "game_1780363888751",
+      "date": "2026-06-04",
+      "time": "18:30",
+      "opponent": "Harman",
+      "location": "Alex 2 (Away)",
+      "result": "W"
+    },
+    {
+      "id": "game_1780363965847",
+      "date": "2026-06-09",
+      "time": "18:30",
+      "opponent": "Woodview",
+      "location": "Woodview (Home)",
+      "result": "W"
+    },
+    {
+      "id": "game_1780363994165",
+      "date": "2026-06-09",
+      "time": "20:30",
+      "opponent": "Harman",
+      "location": "Woodview (Home)",
+      "result": "W"
+    },
+    {
+      "id": "game_1780364131369",
+      "date": "2026-06-16",
+      "time": "18:30",
+      "opponent": "Woodview",
+      "location": "Woodview (Away)",
+      "result": ""
+    },
+    {
+      "id": "game_1780364198808",
+      "date": "2026-06-18",
+      "time": "18:30",
+      "opponent": "Woodview",
+      "location": "Alex 2(Home)",
+      "result": ""
+    },
+    {
+      "id": "game_1780364258816",
+      "date": "2026-06-23",
+      "time": "18:30",
+      "opponent": "Woodview",
+      "location": "Woodview (Away)",
+      "result": ""
+    },
+    {
+      "id": "game_1780364312145",
+      "date": "2026-06-25",
+      "time": "18:30",
+      "opponent": "Woodview",
+      "location": "Alex 2",
+      "result": ""
+    },
+    {
+      "id": "game_1780364364603",
+      "date": "2026-06-30",
+      "time": "18:30",
+      "opponent": "Harman",
+      "location": "Woodview (Home)",
+      "result": ""
+    },
+    {
+      "id": "game_1780364393559",
+      "date": "2026-06-30",
+      "time": "20:30",
+      "opponent": "Woodview",
+      "location": "Woodview (Home)",
+      "result": ""
+    },
+    {
+      "id": "game_1781313499240",
+      "date": "2026-07-07",
+      "time": "20:30",
+      "opponent": "Harman",
+      "location": "Woodview(Away)",
+      "result": "",
+      "score": ""
+    },
+    {
+      "id": "game_1781313564453",
+      "date": "2026-07-09",
+      "time": "18:30",
+      "opponent": "Woodview",
+      "location": "Alex 2 (Home)",
+      "result": "",
+      "score": ""
+    },
+    {
+      "id": "game_1781313649552",
+      "date": "2026-07-14",
+      "time": "20:30",
+      "opponent": "Woodview",
+      "location": "Woodview (Away)",
+      "result": ""
+    },
+    {
+      "id": "game_1781314176920",
+      "date": "2026-07-16",
+      "time": "18:30",
+      "opponent": "Harman",
+      "location": "Alex 2(Away)",
+      "result": ""
+    },
+    {
+      "id": "game_1781314250448",
+      "date": "2026-07-21",
+      "time": "18:30",
+      "opponent": "Woodview",
+      "location": "Woodview(Home)",
+      "result": ""
+    },
+    {
+      "id": "game_1781314317023",
+      "date": "2026-07-21",
+      "time": "20:30",
+      "opponent": "Harman",
+      "location": "Woodview(Home)",
+      "result": ""
+    },
+    {
+      "id": "game_1781314439522",
+      "date": "2026-07-28",
+      "time": "20:30",
+      "opponent": "Harman",
+      "location": "Woodview(Away)",
+      "result": ""
+    },
+    {
+      "id": "game_1781314518805",
+      "date": "2026-07-30",
+      "time": "18:30",
+      "opponent": "Woodview",
+      "location": "Alex 2 (Home)",
+      "result": ""
+    },
+    {
+      "id": "game_1781314810967",
+      "date": "2026-08-04",
+      "time": "18:30",
+      "opponent": "Woodview",
+      "location": "Woodview (Away)",
+      "result": ""
+    },
+    {
+      "id": "game_1781314895815",
+      "date": "2026-08-06",
+      "time": "18:30",
+      "opponent": "Harman",
+      "location": "Alex 2 (Away)",
+      "result": ""
+    },
+    {
+      "id": "game_1781314954946",
+      "date": "2026-08-11",
+      "time": "18:30",
+      "opponent": "Harman",
+      "location": "Woodview (Home)",
+      "result": ""
+    },
+    {
+      "id": "game_1781315007717",
+      "date": "2026-08-11",
+      "time": "20:30",
+      "opponent": "Woodview",
+      "location": "Woodview (Home)",
+      "result": ""
+    }
+  ],
+  "career_stats": {
+    "Willow Norton": {
+      "AB": 10,
+      "1B": 3,
+      "2B": 2,
+      "3B": 0,
+      "HR": 1,
+      "RBI": 3,
+      "BB": 1,
+      "K": 0,
+      "R": 4,
+      "E": 0,
+      "games": 4,
+      "avg": ".667",
+      "obp": ".700",
+      "slg": ".1222"
+    },
+    "Ben Keene": {
+      "AB": 4,
+      "1B": 1,
+      "2B": 1,
+      "3B": 0,
+      "HR": 0,
+      "RBI": 2,
+      "BB": 1,
+      "K": 0,
+      "R": 3,
+      "E": 0,
+      "games": 2,
+      "avg": ".667",
+      "obp": ".750",
+      "slg": ".1000"
+    },
+    "Teague Sullivan": {
+      "AB": 10,
+      "1B": 5,
+      "2B": 1,
+      "3B": 1,
+      "HR": 2,
+      "RBI": 11,
+      "BB": 0,
+      "K": 0,
+      "R": 5,
+      "E": 0,
+      "games": 4,
+      "avg": ".900",
+      "obp": ".900",
+      "slg": ".1800"
+    },
+    "Ryder Sherwood": {
+      "AB": 11,
+      "1B": 6,
+      "2B": 3,
+      "3B": 0,
+      "HR": 0,
+      "RBI": 6,
+      "BB": 1,
+      "K": 0,
+      "R": 8,
+      "E": 0,
+      "games": 4,
+      "avg": ".900",
+      "obp": ".909",
+      "slg": ".1200"
+    },
+    "Tyson Leduc": {
+      "AB": 10,
+      "1B": 6,
+      "2B": 0,
+      "3B": 1,
+      "HR": 1,
+      "RBI": 10,
+      "BB": 0,
+      "K": 0,
+      "R": 3,
+      "E": 0,
+      "games": 4,
+      "avg": ".800",
+      "obp": ".800",
+      "slg": ".1300"
+    },
+    "Logan Bradly": {
+      "AB": 10,
+      "1B": 2,
+      "2B": 0,
+      "3B": 0,
+      "HR": 0,
+      "RBI": 3,
+      "BB": 3,
+      "K": 0,
+      "R": 4,
+      "E": 0,
+      "games": 4,
+      "avg": ".286",
+      "obp": ".500",
+      "slg": ".286"
+    },
+    "Emmett Riviere": {
+      "AB": 9,
+      "1B": 3,
+      "2B": 0,
+      "3B": 0,
+      "HR": 0,
+      "RBI": 2,
+      "BB": 2,
+      "K": 0,
+      "R": 2,
+      "E": 0,
+      "games": 4,
+      "avg": ".429",
+      "obp": ".556",
+      "slg": ".429"
+    },
+    "Siobhan Sasseville": {
+      "AB": 9,
+      "1B": 1,
+      "2B": 0,
+      "3B": 0,
+      "HR": 0,
+      "RBI": 0,
+      "BB": 4,
+      "K": 0,
+      "R": 4,
+      "E": 0,
+      "games": 4,
+      "avg": ".200",
+      "obp": ".556",
+      "slg": ".200"
+    },
+    "Dylan Hurbert": {
+      "AB": 9,
+      "1B": 3,
+      "2B": 0,
+      "3B": 2,
+      "HR": 1,
+      "RBI": 5,
+      "BB": 2,
+      "K": 0,
+      "R": 5,
+      "E": 0,
+      "games": 4,
+      "avg": ".857",
+      "obp": ".889",
+      "slg": ".1857"
+    },
+    "Carlee Longbottom": {
+      "AB": 9,
+      "1B": 1,
+      "2B": 0,
+      "3B": 0,
+      "HR": 0,
+      "RBI": 0,
+      "BB": 4,
+      "K": 0,
+      "R": 3,
+      "E": 0,
+      "games": 4,
+      "avg": ".200",
+      "obp": ".556",
+      "slg": ".200"
+    },
+    "Gavin Dudley": {
+      "AB": 0,
+      "1B": 0,
+      "2B": 0,
+      "3B": 0,
+      "HR": 0,
+      "RBI": 0,
+      "BB": 0,
+      "K": 0,
+      "R": 0,
+      "E": 0,
+      "games": 0,
+      "avg": ".000",
+      "obp": ".000",
+      "slg": ".000"
+    },
+    "Declan Sullivan": {
+      "AB": 2,
+      "1B": 0,
+      "2B": 0,
+      "3B": 1,
+      "HR": 0,
+      "RBI": 0,
+      "BB": 1,
+      "K": 0,
+      "R": 1,
+      "E": 0,
+      "games": 1,
+      "avg": ".1000",
+      "obp": ".1000",
+      "slg": ".3000"
+    },
+    "Luke (Pickup)": {
+      "AB": 5,
+      "1B": 3,
+      "2B": 2,
+      "3B": 0,
+      "HR": 0,
+      "RBI": 4,
+      "BB": 0,
+      "K": 0,
+      "R": 3,
+      "E": 0,
+      "games": 2,
+      "avg": ".1000",
+      "obp": ".1000",
+      "slg": ".1400"
+    }
+  },
+  "record": {
+    "wins": 4,
+    "losses": 0
+  }
+}
