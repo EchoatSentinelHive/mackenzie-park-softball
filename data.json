@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-13T15:54:01.393027Z",
+  "generated": "2026-06-13T15:54:13.106171Z",
   "roster": [
     {
       "number": "3",
@@ -24,9 +24,12 @@
       "name": "Teague Sullivan",
       "position": "C",
       "position2": "LCF",
-      "bats": "R",
+      "bats": "S",
       "throws": "R",
-      "notes": "Great Glove, Good Bat, Good Knowledge"
+      "notes": "Great Glove, Good Bat, Good Knowledge",
+      "nickname": "",
+      "bio": "",
+      "photo_url": ""
     },
     {
       "number": "24",
