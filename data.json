@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-13T15:53:37.662457Z",
+  "generated": "2026-06-13T15:53:48.917812Z",
   "roster": [
     {
       "number": "3",
@@ -68,10 +68,13 @@
       "number": "39",
       "name": "Siobhan Sasseville",
       "position": "3B",
-      "position2": "RF",
+      "position2": "LF",
       "bats": "R",
       "throws": "R",
-      "notes": "Consistent glove, decent arm, ok bat"
+      "notes": "Consistent glove, decent arm, ok bat",
+      "nickname": "",
+      "bio": "",
+      "photo_url": ""
     },
     {
       "number": "8",
