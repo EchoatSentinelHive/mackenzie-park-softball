@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-13T13:57:39.841624Z",
+  "generated": "2026-06-13T15:53:37.662457Z",
   "roster": [
     {
       "number": "3",
@@ -77,10 +77,13 @@
       "number": "8",
       "name": "Dylan Hurbert",
       "position": "1B",
-      "position2": "LF",
+      "position2": "C",
       "bats": "R",
       "throws": "R",
-      "notes": "Strong arm, strong bat, good knowledge"
+      "notes": "Strong arm, strong bat, good knowledge",
+      "nickname": "",
+      "bio": "",
+      "photo_url": ""
     },
     {
       "number": "4",
