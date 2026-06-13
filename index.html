@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mackenzie Park U15 Peewee Coed Softball</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ── BASE ──────────────────────────────────────────────────────────────── */
+:root {
+  --red: #cc1b1b;
+  --red-dark: #920f0f;
+  --red-bright: #ff2222;
+  --black: #0d0d0d;
+  --off-black: #161616;
+  --card-bg: #1a1a1a;
+  --white: #f5f5f5;
+  --dim: rgba(245,245,245,.45);
+  --border: rgba(245,245,245,.1);
+  --red-glow: rgba(204,27,27,.4);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,.display {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: .05em;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ── NOISE TEXTURE ─────────────────────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 999;
+  opacity: .6;
+}
+
+/* ── NAV ───────────────────────────────────────────────────────────────── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgba(13,13,13,.95), transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.nav-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: .12em;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo-accent {
+  color: var(--red);
+  font-size: 26px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.nav-links a:hover { color: var(--white); }
+
+.nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.nav-burger span { width: 22px; height: 2px; background: var(--white); display: block; transition: .3s; }
+
+/* ── HERO ──────────────────────────────────────────────────────────────── */
+.hero {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 24px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(204,27,27,.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(204,27,27,.08) 0%, transparent 60%);
+}
+
+.hero-diamond {
+  position: absolute;
+  width: 600px; height: 600px;
+  border: 1px solid rgba(204,27,27,.12);
+  transform: rotate(45deg);
+  top: 50%; left: 50%;
+  translate: -50% -50%;
+  animation: spin 40s linear infinite;
+}
+
+.hero-diamond-2 {
+  width: 400px; height: 400px;
+  border-color: rgba(204,27,27,.08);
+  animation-direction: reverse;
+  animation-duration: 28s;
+}
+
+@keyframes spin { to { transform: rotate(calc(45deg + 360deg)); } }
+
+.hero-badge {
+  font-size: 11px;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--red);
+  border: 1px solid rgba(204,27,27,.4);
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+  display: inline-block;
+  animation: fadeUp .8s ease both;
+}
+
+.hero h1 {
+  font-size: clamp(64px, 14vw, 140px);
+  line-height: .9;
+  color: var(--white);
+  animation: fadeUp .8s .1s ease both;
+}
+
+.hero h1 span { color: var(--red); }
+
+.hero-sub {
+  font-size: clamp(13px, 2.5vw, 16px);
+  color: var(--dim);
+  max-width: 480px;
+  line-height: 1.65;
+  margin: 20px auto 36px;
+  font-weight: 300;
+  animation: fadeUp .8s .2s ease both;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp .8s .3s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── BUTTONS ───────────────────────────────────────────────────────────── */
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .2s, transform .1s;
+}
+.btn-primary:hover { background: var(--red-bright); transform: translateY(-1px); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 13px 28px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color .2s, transform .1s;
+}
+.btn-outline:hover { border-color: rgba(245,245,245,.4); transform: translateY(-1px); }
+
+/* ── SECTIONS ──────────────────────────────────────────────────────────── */
+.section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+.section-sm { max-width: 800px; }
+
+.section-tag {
+  font-size: 10px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(36px, 7vw, 72px);
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border);
+  margin: 0;
+}
+
+/* ── STATS BAR ─────────────────────────────────────────────────────────── */
+.stats-bar {
+  background: var(--red-dark);
+  padding: 20px 24px;
+  overflow-x: auto;
+}
+
+.stats-bar-inner {
+  display: flex;
+  gap: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-width: 500px;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+  border-right: 1px solid rgba(245,245,245,.15);
+}
+.stat-item:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: rgba(245,245,245,.6);
+  margin-top: 3px;
+}
+
+/* ── SCHEDULE ──────────────────────────────────────────────────────────── */
+.schedule-list { display: flex; flex-direction: column; gap: 2px; }
+
+.schedule-item {
+  display: grid;
+  grid-template-columns: 90px 1fr auto auto;
+  gap: 16px;
+  align-items: center;
+  padding: 20px 24px;
+  background: var(--card-bg);
+  border-radius: 8px;
+  border-left: 3px solid transparent;
+  transition: border-color .2s, background .2s;
+  cursor: default;
+}
+
+.schedule-item:hover { background: #1f1f1f; border-left-color: var(--red); }
+.schedule-item.today { border-left-color: var(--red); background: rgba(204,27,27,.08); }
+.schedule-item.past { opacity: .5; }
+
+.s-date { font-family: 'Bebas Neue', sans-serif; font-size: 15px; letter-spacing: .08em; }
+.s-month { font-size: 10px; letter-spacing: .2em; color: var(--red); display: block; }
+.s-day { font-size: 22px; line-height: 1; }
+
+.s-info { }
+.s-opponent { font-size: 16px; font-weight: 500; }
+.s-location { font-size: 12px; color: var(--dim); margin-top: 2px; }
+
+.s-time { font-size: 13px; color: var(--dim); text-align: right; }
+
+.s-result {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  min-width: 60px;
+  text-align: right;
+}
+.s-result.W { color: #00cc77; }
+.s-result.L { color: var(--red); }
+
+/* ── ROSTER / PLAYER CARDS ─────────────────────────────────────────────── */
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.player-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+  cursor: default;
+  border: 1px solid var(--border);
+}
+
+.player-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,.4), 0 0 0 1px rgba(204,27,27,.3);
+}
+
+.player-photo {
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #1f1f1f 0%, var(--off-black) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px;
+  color: rgba(245,245,245,.08);
+  overflow: hidden;
+  position: relative;
+}
+
+.player-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.player-number {
+  position: absolute;
+  top: 8px; right: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 14px;
+  color: var(--red);
+  letter-spacing: .05em;
+}
+
+.player-info { padding: 12px 14px 14px; }
+.player-name { font-size: 14px; font-weight: 600; }
+.player-nick { font-size: 11px; color: var(--red); margin-top: 1px; }
+.player-pos  { font-size: 11px; color: var(--dim); margin-top: 4px; letter-spacing: .08em; }
+
+/* Player detail modal */
+.player-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.85);
+  z-index: 500;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  backdrop-filter: blur(6px);
+}
+.player-modal-overlay.open { display: flex; }
+
+.player-modal {
+  background: var(--card-bg);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  animation: fadeUp .25s ease;
+}
+
+.pm-header {
+  background: var(--red-dark);
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.pm-photo {
+  width: 80px; height: 80px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.3);
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  color: rgba(255,255,255,.2);
+  flex-shrink: 0;
+}
+
+.pm-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+.pm-title { flex: 1; }
+.pm-name { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: .05em; line-height: 1; }
+.pm-nick { font-size: 13px; color: rgba(255,255,255,.6); margin-top: 4px; }
+.pm-num  { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: rgba(255,255,255,.15); line-height: 1; }
+
+.pm-body { padding: 20px 24px; }
+.pm-pos { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--red); margin-bottom: 16px; }
+
+.pm-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.pm-stat { text-align: center; background: rgba(255,255,255,.04); border-radius: 8px; padding: 10px 6px; }
+.pm-stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--white); }
+.pm-stat-lbl { font-size: 9px; letter-spacing: .15em; color: var(--dim); margin-top: 2px; }
+
+.pm-bio { font-size: 13px; color: var(--dim); line-height: 1.65; }
+.pm-close {
+  width: 100%; padding: 14px;
+  background: transparent;
+  border: none;
+  border-top: 1px solid var(--border);
+  color: var(--dim);
+  font-size: 12px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color .2s;
+}
+.pm-close:hover { color: var(--white); }
+
+/* ── MESSAGE BOARD ─────────────────────────────────────────────────────── */
+.board-messages { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; min-height: 100px; }
+
+.board-msg {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 14px 16px;
+  border-left: 3px solid var(--border);
+  animation: fadeUp .2s ease;
+}
+
+.board-msg.approved { border-left-color: rgba(0,204,119,.4); }
+
+.msg-author { font-size: 12px; font-weight: 600; color: var(--white); }
+.msg-time   { font-size: 10px; color: var(--dim); float: right; }
+.msg-text   { font-size: 13px; color: var(--dim); margin-top: 5px; line-height: 1.55; }
+
+.board-form {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid var(--border);
+}
+
+.board-form h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  margin-bottom: 14px;
+  letter-spacing: .05em;
+}
+
+.board-inputs { display: flex; flex-direction: column; gap: 10px; }
+
+.board-input, .board-textarea {
+  background: var(--off-black);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  padding: 12px 14px;
+  outline: none;
+  width: 100%;
+  transition: border-color .2s;
+}
+.board-input:focus, .board-textarea:focus { border-color: rgba(204,27,27,.5); }
+.board-textarea { min-height: 80px; resize: vertical; }
+.board-input::placeholder, .board-textarea::placeholder { color: var(--dim); }
+
+.board-submit {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.board-status {
+  font-size: 12px;
+  color: var(--dim);
+  text-align: center;
+  margin-top: 10px;
+  min-height: 20px;
+}
+
+/* ── TEAM PHOTO ─────────────────────────────────────────────────────────── */
+.team-photo-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  position: relative;
+  aspect-ratio: 16/7;
+  background: var(--card-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.team-photo-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+.team-photo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--dim);
+}
+
+.team-photo-placeholder .icon { font-size: 48px; }
+.team-photo-placeholder span { font-size: 13px; letter-spacing: .15em; text-transform: uppercase; }
+
+/* ── FOOTER ─────────────────────────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: .12em;
+  color: var(--dim);
+  margin-bottom: 8px;
+}
+
+.footer-copy { font-size: 11px; color: rgba(245,245,245,.25); letter-spacing: .1em; }
+
+/* ── MOBILE NAV ─────────────────────────────────────────────────────────── */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+  z-index: 90;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.mobile-menu.open { display: flex; }
+
+.mobile-menu a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  letter-spacing: .05em;
+  color: var(--white);
+  transition: color .2s;
+}
+.mobile-menu a:hover { color: var(--red); }
+
+/* ── LOADING SKELETON ─────────────────────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(90deg, #1a1a1a 25%, #222 50%, #1a1a1a 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 6px;
+  height: 60px;
+}
+
+@keyframes shimmer { to { background-position: -200% 0; } }
+
+/* ── RESPONSIVE ─────────────────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .nav-links { display: none; }
+  .nav-burger { display: flex; }
+
+  .schedule-item {
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto auto;
+    gap: 4px 12px;
+    padding: 14px 16px;
+  }
+
+  .s-date { grid-row: 1 / 3; }
+  .s-time { display: none; }
+  .s-result { grid-column: 2; text-align: left; font-size: 14px; }
+
+  .roster-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; }
+
+  .pm-stats { grid-template-columns: repeat(3, 1fr); }
+
+  .stats-bar-inner { gap: 0; }
+  .stat-num { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#schedule" onclick="closeMobileMenu()">Schedule</a>
+  <a href="#roster" onclick="closeMobileMenu()">Roster</a>
+  <a href="#board" onclick="closeMobileMenu()">Board</a>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo">
+    <span class="nav-logo-accent">⚾</span>
+    MACKENZIE PARK
+  </div>
+  <div class="nav-links">
+    <a href="#schedule">Schedule</a>
+    <a href="#roster">Roster</a>
+    <a href="#board">Message Board</a>
+  </div>
+  <div class="nav-burger" onclick="toggleMobileMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-diamond"></div>
+  <div class="hero-diamond hero-diamond-2"></div>
+  <div class="hero-badge">U15 Peewee Coed · Oshawa</div>
+  <h1>MACKENZIE<br><span>PARK</span></h1>
+  <p class="hero-sub">U15 Peewee. U15 Peewee Coed. Red. Black. All game. Follow the season, cheer the team on, and stay connected.</p>
+  <div class="hero-actions">
+    <a href="#schedule"><button class="btn-primary">View Schedule</button></a>
+    <a href="#roster"><button class="btn-outline">Meet the Team</button></a>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-bar-inner" id="stats-bar-content">
+    <div class="stat-item"><div class="stat-num" id="stat-wins">—</div><div class="stat-label">Wins</div></div>
+    <div class="stat-item"><div class="stat-num" id="stat-losses">—</div><div class="stat-label">Losses</div></div>
+    <div class="stat-item"><div class="stat-num" id="stat-games">—</div><div class="stat-label">Games Played</div></div>
+    <div class="stat-item"><div class="stat-num" id="stat-players">—</div><div class="stat-label">Players</div></div>
+  </div>
+</div>
+<div style="text-align:center;font-size:11px;opacity:.4;margin-top:-6px;margin-bottom:12px" id="last-updated"></div>
+
+<!-- SCHEDULE -->
+<section class="section" id="schedule">
+  <p class="section-tag">2025 Season</p>
+  <h2 class="section-title">SCHEDULE</h2>
+  <div class="schedule-list" id="schedule-list">
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TEAM PHOTO + ROSTER -->
+<section class="section" id="roster">
+  <p class="section-tag">The Team</p>
+  <h2 class="section-title">ROSTER</h2>
+
+  <div class="team-photo-wrap" id="team-photo-wrap">
+    <div class="team-photo-placeholder">
+      <div class="icon">📸</div>
+      <span>Team Photo Coming Soon</span>
+    </div>
+  </div>
+
+  <div class="roster-grid" id="roster-grid">
+    <div class="skeleton" style="height:220px;border-radius:12px"></div>
+    <div class="skeleton" style="height:220px;border-radius:12px"></div>
+    <div class="skeleton" style="height:220px;border-radius:12px"></div>
+    <div class="skeleton" style="height:220px;border-radius:12px"></div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- MESSAGE BOARD -->
+<section class="section section-sm" id="board">
+  <p class="section-tag">Community</p>
+  <h2 class="section-title">MESSAGE BOARD</h2>
+  <p style="font-size:13px;color:var(--dim);margin-bottom:24px;line-height:1.65">
+    All messages are reviewed by a moderator before they appear. Keep it positive — this is a U15 youth team.
+  </p>
+
+  <div class="board-messages" id="board-messages">
+    <div class="skeleton" style="height:70px"></div>
+    <div class="skeleton" style="height:70px"></div>
+  </div>
+
+  <div class="board-form">
+    <h3>LEAVE A MESSAGE</h3>
+    <div class="board-inputs">
+      <input class="board-input" id="msg-name" placeholder="Your name (e.g. Jamie's Mom)" maxlength="50">
+      <textarea class="board-textarea" id="msg-text" placeholder="Cheer the team on, share a highlight, say thanks..." maxlength="400"></textarea>
+      <button class="btn-primary board-submit" onclick="submitMessage()">SEND MESSAGE</button>
+      <p class="board-status" id="msg-status"></p>
+    </div>
+  </div>
+</section>
+
+<!-- PLAYER MODAL -->
+<div class="player-modal-overlay" id="player-modal" onclick="closePlayerModal(event)">
+  <div class="player-modal" id="player-modal-inner">
+    <div class="pm-header">
+      <div class="pm-photo" id="pm-photo">?</div>
+      <div class="pm-title">
+        <div class="pm-name" id="pm-name">—</div>
+        <div class="pm-nick" id="pm-nick"></div>
+        <div class="pm-pos" id="pm-pos"></div>
+      </div>
+      <div class="pm-num" id="pm-num"></div>
+    </div>
+    <div class="pm-body">
+      <div class="pm-stats" id="pm-stats"></div>
+      <div class="pm-bio" id="pm-bio"></div>
+    </div>
+    <button class="pm-close" onclick="closePlayerModal()">CLOSE</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">⚾ MACKENZIE PARK U15 PEEWEE COED SOFTBALL</div>
+  <div class="footer-copy">OSHAWA · RED & BLACK · ALL GAME</div>
+</footer>
+
+<script>
+// ── CONFIG ─────────────────────────────────────────────────────────────
+// Data loads from data.json in the GitHub repo (pushed by Hive Chronos).
+// Falls back to the live Hive API when page is served from localhost.
+const DATA_JSON_URL = (() => {
+  if (!window.location.hostname.endsWith('github.io')) return null;
+  const base = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/');
+  return base + 'data.json';
+})();
+const HIVE_BASE = window.location.protocol === 'file:'
+  ? 'http://localhost:8082'
+  : `${window.location.protocol}//${window.location.host}`;
+let _sd = null;
+async function _getData() {
+  if (!DATA_JSON_URL) return null;
+  if (_sd) return _sd;
+  try { const r = await fetch(DATA_JSON_URL + '?t=' + Date.now()); if (r.ok) { _sd = await r.json(); return _sd; } } catch(e) {}
+  return null;
+}
+
+// ── MOBILE NAV ─────────────────────────────────────────────────────────
+function toggleMobileMenu() {
+  document.getElementById('mobile-menu').classList.toggle('open');
+}
+function closeMobileMenu() {
+  document.getElementById('mobile-menu').classList.remove('open');
+}
+
+// ── LOAD SCHEDULE ──────────────────────────────────────────────────────
+async function loadSchedule() {
+  try {
+    const _s = await _getData();
+    const data = _s ? (_s.schedule||[]) : await fetch(`${HIVE_BASE}/api/softball/schedule`).then(r=>r.json());
+    const el = document.getElementById('schedule-list');
+    const today = new Date().toISOString().split('T')[0];
+
+    if (!data.length) {
+      el.innerHTML = '<div style="color:var(--dim);padding:20px;text-align:center">No games scheduled yet.</div>';
+      return;
+    }
+
+    const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+
+    let wins = 0, losses = 0, played = 0;
+
+    el.innerHTML = data.map(g => {
+      const dt = new Date(g.date + 'T12:00:00');
+      const isToday = g.date === today;
+      const isPast  = g.date < today;
+      const dayName = days[dt.getDay()];
+      const mon = months[dt.getMonth()];
+      const day = dt.getDate();
+
+      let resultHtml = '';
+      if (g.result) {
+        const r2 = g.result.trim().toUpperCase();
+        const isW = r2==='W'||r2.startsWith('W ')||r2==='WIN'||r2==='WON';
+        const isL = r2==='L'||r2.startsWith('L ')||r2==='LOSS'||r2==='LOST';
+        if (isW) wins++;
+        else if (isL) losses++;
+        played++;
+        const score = g.score ? ' '+g.score : '';
+        if (isW)      resultHtml = `<div class="s-result W">WIN${score}</div>`;
+        else if (isL) resultHtml = `<div class="s-result L">LOSS${score}</div>`;
+        else          resultHtml = `<div class="s-result">${g.result}${score}</div>`;
+      } else {
+        resultHtml = `<div class="s-result" style="color:var(--dim);font-size:12px">${isPast ? 'TBD' : 'UPCOMING'}</div>`;
+      }
+
+      return `<div class="schedule-item ${isToday ? 'today' : isPast ? 'past' : ''}">
+        <div class="s-date">
+          <span class="s-month">${dayName} · ${mon}</span>
+          <div class="s-day">${day}</div>
+        </div>
+        <div class="s-info">
+          <div class="s-opponent">vs ${g.opponent || 'TBD'}</div>
+          ${g.location ? `<div class="s-location">📍 ${g.location}</div>` : ''}
+        </div>
+        <div class="s-time">${g.time || ''}</div>
+        ${resultHtml}
+      </div>`;
+    }).join('');
+
+    // Update stats bar
+    document.getElementById('stat-wins').textContent = wins;
+    document.getElementById('stat-losses').textContent = losses;
+    document.getElementById('stat-games').textContent = played;
+
+  } catch(e) {
+    document.getElementById('schedule-list').innerHTML =
+      '<div style="color:var(--dim);padding:20px;text-align:center">Could not load schedule.</div>';
+  }
+}
+
+// ── LOAD ROSTER ────────────────────────────────────────────────────────
+let rosterData = [];
+
+async function loadRoster() {
+  try {
+    const _s2 = await _getData();
+    rosterData = _s2 ? (_s2.roster||[]) : await fetch(`${HIVE_BASE}/api/softball/roster`).then(r=>r.json());
+    const el = document.getElementById('roster-grid');
+
+    document.getElementById('stat-players').textContent = rosterData.length;
+
+    if (!rosterData.length) {
+      el.innerHTML = '<div style="color:var(--dim);padding:20px;grid-column:1/-1">No players yet.</div>';
+      return;
+    }
+
+    el.innerHTML = rosterData.map((p, i) => {
+      const initials = (p.name || '?').split(' ').map(n => n[0]).join('').slice(0,2).toUpperCase();
+      const hasPhoto = p.photo_url;
+      const nickname = p.nickname || p.nick || '';
+      const pos = [p.position, p.position2].filter(Boolean).join(' · ') || '';
+
+      return `<div class="player-card" onclick="openPlayer(${i})">
+        <div class="player-photo">
+          ${hasPhoto ? `<img src="${p.photo_url}" alt="${p.name}" loading="lazy">` : initials}
+          ${p.number ? `<div class="player-number">#${p.number}</div>` : ''}
+        </div>
+        <div class="player-info">
+          <div class="player-name">${p.name || 'Unknown'}</div>
+          ${nickname ? `<div class="player-nick">"${nickname}"</div>` : ''}
+          ${pos ? `<div class="player-pos">${pos}</div>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+
+  } catch(e) {
+    document.getElementById('roster-grid').innerHTML =
+      '<div style="color:var(--dim);padding:20px;grid-column:1/-1">Could not load roster.</div>';
+  }
+}
+
+// ── PLAYER MODAL ───────────────────────────────────────────────────────
+async function openPlayer(i) {
+  const p = rosterData[i];
+  if (!p) return;
+
+  const nickname = p.nickname || p.nick || '';
+  const pos = [p.position, p.position2].filter(Boolean).join(' · ') || 'Player';
+  const initials = (p.name || '?').split(' ').map(n => n[0]).join('').slice(0,2).toUpperCase();
+
+  document.getElementById('pm-name').textContent = p.name || '—';
+  document.getElementById('pm-nick').textContent = nickname ? `"${nickname}"` : '';
+  document.getElementById('pm-pos').textContent = pos;
+  document.getElementById('pm-num').textContent = p.number ? `#${p.number}` : '';
+
+  const photoEl = document.getElementById('pm-photo');
+  if (p.photo_url) {
+    photoEl.innerHTML = `<img src="${p.photo_url}" alt="${p.name}">`;
+  } else {
+    photoEl.textContent = initials;
+  }
+
+  // Try to load career stats for this player
+  try {
+    const _s3 = await _getData();
+    const stats = _s3 ? (_s3.career_stats||{}) : await fetch(`${HIVE_BASE}/api/softball/career_stats`).then(r=>r.json());
+    const pStats = stats[p.name] || {};
+    // Compute 1B = H - 2B - 3B - HR
+    const h = pStats.H || 0, b2 = pStats['2B'] || 0, b3 = pStats['3B'] || 0, hr = pStats.HR || 0;
+    const singles = Math.max(0, h - b2 - b3 - hr);
+    const statFields = [
+      { key:'_1b', label:'1B', val: singles },
+      { key:'2B',  label:'2B', val: b2 },
+      { key:'3B',  label:'3B', val: b3 },
+      { key:'HR',  label:'HR', val: hr },
+      { key:'RBI', label:'RBI', val: pStats.RBI || 0 },
+      { key:'avg', label:'AVG', val: pStats.avg || '.000' },
+      { key:'obp', label:'OBP', val: pStats.obp || '.000' },
+    ];
+    document.getElementById('pm-stats').innerHTML = statFields.map(s =>
+      `<div class="pm-stat">
+        <div class="pm-stat-num" style="color:${s.key==='HR'?'#cc1b1b':s.key==='avg'||s.key==='obp'?'#f5c518':'inherit'}">${s.val}</div>
+        <div class="pm-stat-lbl">${s.label}</div>
+      </div>`
+    ).join('');
+  } catch(e) {
+    document.getElementById('pm-stats').innerHTML = '';
+  }
+
+  document.getElementById('pm-bio').textContent = p.bio || '';
+  document.getElementById('player-modal').classList.add('open');
+}
+
+function closePlayerModal(e) {
+  if (!e || e.target === document.getElementById('player-modal')) {
+    document.getElementById('player-modal').classList.remove('open');
+  }
+}
+
+// ── MESSAGE BOARD ──────────────────────────────────────────────────────
+const BOARD_KEY = 'mp_board_msgs';
+
+function loadMessages() {
+  const el = document.getElementById('board-messages');
+  try {
+    const msgs = JSON.parse(localStorage.getItem(BOARD_KEY) || '[]');
+    // Only show approved ones (status === 'approved')
+    const approved = msgs.filter(m => m.status === 'approved');
+    if (!approved.length) {
+      el.innerHTML = '<div style="color:var(--dim);font-size:13px;padding:20px 0">No messages yet — be the first to cheer the team on!</div>';
+      return;
+    }
+    el.innerHTML = approved.map(m => `
+      <div class="board-msg approved">
+        <span class="msg-author">${escHtml(m.name)}</span>
+        <span class="msg-time">${m.time || ''}</span>
+        <div class="msg-text">${escHtml(m.text)}</div>
+      </div>
+    `).join('');
+  } catch(e) {
+    el.innerHTML = '';
+  }
+}
+
+async function submitMessage() {
+  const name = document.getElementById('msg-name').value.trim();
+  const text = document.getElementById('msg-text').value.trim();
+  const status = document.getElementById('msg-status');
+
+  if (!name || !text) { status.textContent = 'Please enter your name and a message.'; return; }
+  if (text.length < 5) { status.textContent = 'Message too short.'; return; }
+
+  status.textContent = 'Sending for review...';
+
+  const msg = {
+    id: Date.now(),
+    name,
+    text,
+    time: new Date().toLocaleDateString('en-CA', {month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'}),
+    status: 'pending'
+  };
+
+  // Store locally (pending)
+  try {
+    const msgs = JSON.parse(localStorage.getItem(BOARD_KEY) || '[]');
+    msgs.push(msg);
+    localStorage.setItem(BOARD_KEY, JSON.stringify(msgs.slice(-100)));
+  } catch(e) {}
+
+  // Send to Hive for AI moderation (Echo checks for inappropriate content)
+  try {
+    const response = await fetch(`${HIVE_BASE}/api/moderate_message`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, text, msg_id: msg.id })
+    });
+    const result = await response.json();
+
+    if (result.approved) {
+      // Update status in local storage
+      const msgs = JSON.parse(localStorage.getItem(BOARD_KEY) || '[]');
+      const found = msgs.find(m => m.id === msg.id);
+      if (found) { found.status = 'approved'; localStorage.setItem(BOARD_KEY, JSON.stringify(msgs)); }
+      document.getElementById('msg-name').value = '';
+      document.getElementById('msg-text').value = '';
+      status.textContent = '✓ Message approved and posted!';
+      loadMessages();
+    } else {
+      status.textContent = result.reason || 'Message not approved. Keep it positive!';
+    }
+  } catch(e) {
+    // If Hive is offline, queue it
+    status.textContent = 'Saved for moderation — will appear once reviewed.';
+    document.getElementById('msg-name').value = '';
+    document.getElementById('msg-text').value = '';
+  }
+}
+
+function escHtml(str) {
+  return (str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ── KILL SWITCH (Sentinel monitors request rate) ───────────────────────
+// Simple client-side rate limit: track requests per minute
+const _reqTimes = [];
+function checkRateLimit() {
+  const now = Date.now();
+  _reqTimes.push(now);
+  // Keep only last 60 seconds
+  while (_reqTimes.length && _reqTimes[0] < now - 60000) _reqTimes.shift();
+  if (_reqTimes.length > 30) {
+    document.body.innerHTML = `
+      <div style="display:flex;align-items:center;justify-content:center;height:100vh;
+                  background:#0d0d0d;flex-direction:column;gap:16px;text-align:center;padding:24px">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:64px;color:#cc1b1b">503</div>
+        <div style="font-family:'DM Sans',sans-serif;color:rgba(245,245,245,.5);font-size:14px">
+          Too many requests. Please wait a moment.
+        </div>
+      </div>`;
+    return false;
+  }
+  return true;
+}
+
+// Wrap fetch calls with rate limiter
+const _origFetch = window.fetch;
+window.fetch = function(...args) {
+  if (typeof args[0] === 'string' && args[0].includes(HIVE_BASE)) {
+    if (!checkRateLimit()) return Promise.reject(new Error('Rate limited'));
+  }
+  return _origFetch(...args);
+};
+
+// ── LAST UPDATED ───────────────────────────────────────────────────────
+async function showLastUpdated() {
+  const sd = await _getData(); if (!sd||!sd.generated) return;
+  const d=new Date(sd.generated), mins=Math.floor((Date.now()-d)/60000);
+  const rel=mins<2?'just now':mins<60?mins+'m ago':mins<1440?Math.floor(mins/60)+'h ago':Math.floor(mins/1440)+'d ago';
+  const el=document.getElementById('last-updated'); if(el) el.textContent='Stats updated '+rel;
+}
+// ── INIT ───────────────────────────────────────────────────────────────
+loadSchedule();
+loadRoster();
+loadMessages();
+showLastUpdated();
+</script>
+</body>
+</html>
