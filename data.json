@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-13T15:53:48.917812Z",
+  "generated": "2026-06-13T15:54:01.393027Z",
   "roster": [
     {
       "number": "3",
@@ -109,11 +109,14 @@
     {
       "number": "",
       "name": "Luke (Pickup)",
-      "position": "P",
+      "position": "",
       "position2": "",
       "bats": "R",
       "throws": "R",
-      "notes": ""
+      "notes": "",
+      "nickname": "",
+      "bio": "",
+      "photo_url": ""
     }
   ],
   "schedule": [
