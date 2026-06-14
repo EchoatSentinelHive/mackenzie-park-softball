@@ -430,7 +430,7 @@ body::before {
 
 .pm-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-bottom: 16px;
 }
@@ -871,17 +871,18 @@ async function loadRoster() {
 
     el.innerHTML = rosterData.map((p, i) => {
       const initials = (p.name || '?').split(' ').map(n => n[0]).join('').slice(0,2).toUpperCase();
+      const firstName = (p.name || 'Unknown').split(' ')[0];
       const hasPhoto = p.photo_url;
       const nickname = p.nickname || p.nick || '';
       const pos = [p.position, p.position2].filter(Boolean).join(' · ') || '';
 
       return `<div class="player-card" onclick="openPlayer(${i})">
         <div class="player-photo">
-          ${hasPhoto ? `<img src="${p.photo_url}" alt="${p.name}" loading="lazy">` : initials}
+          ${hasPhoto ? `<img src="${p.photo_url}" alt="${firstName}" loading="lazy">` : initials}
           ${p.number ? `<div class="player-number">#${p.number}</div>` : ''}
         </div>
         <div class="player-info">
-          <div class="player-name">${p.name || 'Unknown'}</div>
+          <div class="player-name">${firstName}</div>
           ${nickname ? `<div class="player-nick">"${nickname}"</div>` : ''}
           ${pos ? `<div class="player-pos">${pos}</div>` : ''}
         </div>
@@ -901,16 +902,17 @@ async function openPlayer(i) {
 
   const nickname = p.nickname || p.nick || '';
   const pos = [p.position, p.position2].filter(Boolean).join(' · ') || 'Player';
+  const firstName = (p.name || 'Unknown').split(' ')[0];
   const initials = (p.name || '?').split(' ').map(n => n[0]).join('').slice(0,2).toUpperCase();
 
-  document.getElementById('pm-name').textContent = p.name || '—';
+  document.getElementById('pm-name').textContent = firstName || '—';
   document.getElementById('pm-nick').textContent = nickname ? `"${nickname}"` : '';
   document.getElementById('pm-pos').textContent = pos;
   document.getElementById('pm-num').textContent = p.number ? `#${p.number}` : '';
 
   const photoEl = document.getElementById('pm-photo');
   if (p.photo_url) {
-    photoEl.innerHTML = `<img src="${p.photo_url}" alt="${p.name}">`;
+    photoEl.innerHTML = `<img src="${p.photo_url}" alt="${firstName}">`;
   } else {
     photoEl.textContent = initials;
   }
@@ -920,14 +922,21 @@ async function openPlayer(i) {
     const _s3 = await _getData();
     const stats = _s3 ? (_s3.career_stats||{}) : await fetch(`${HIVE_BASE}/api/softball/career_stats`).then(r=>r.json());
     const pStats = stats[p.name] || {};
-    // Compute 1B = H - 2B - 3B - HR
-    const h = pStats.H || 0, b2 = pStats['2B'] || 0, b3 = pStats['3B'] || 0, hr = pStats.HR || 0;
-    const singles = Math.max(0, h - b2 - b3 - hr);
+    // Hive v8.1+ stores 1B directly (not H). Fall back to H-derived calc
+    // for older data that only has a combined H field.
+    const b2 = pStats['2B'] || 0, b3 = pStats['3B'] || 0, hr = pStats.HR || 0;
+    let singles = pStats['1B'];
+    if (singles === undefined || singles === null) {
+      const h = pStats.H || 0;
+      singles = Math.max(0, h - b2 - b3 - hr);
+    }
     const statFields = [
-      { key:'_1b', label:'1B', val: singles },
-      { key:'2B',  label:'2B', val: b2 },
-      { key:'3B',  label:'3B', val: b3 },
-      { key:'HR',  label:'HR', val: hr },
+      { key:'AB',  label:'AB',  val: pStats.AB || 0 },
+      { key:'_1b', label:'1B',  val: singles },
+      { key:'2B',  label:'2B',  val: b2 },
+      { key:'3B',  label:'3B',  val: b3 },
+      { key:'HR',  label:'HR',  val: hr },
+      { key:'BB',  label:'BB',  val: pStats.BB || 0 },
       { key:'RBI', label:'RBI', val: pStats.RBI || 0 },
       { key:'avg', label:'AVG', val: pStats.avg || '.000' },
       { key:'obp', label:'OBP', val: pStats.obp || '.000' },
