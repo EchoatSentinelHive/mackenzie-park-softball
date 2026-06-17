@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-17T13:01:41.394354Z",
+  "generated": "2026-06-17T13:09:05.626499Z",
   "roster": [
     {
       "number": "3",
@@ -32,13 +32,16 @@
       "photo_url": ""
     },
     {
-      "number": "24",
+      "number": "24/25",
       "name": "Ryder Sherwood",
       "position": "2B",
       "position2": "LF",
       "bats": "R",
       "throws": "R",
-      "notes": "Incredibly Fast"
+      "notes": "Incredibly Fast",
+      "nickname": "",
+      "bio": "",
+      "photo_url": ""
     },
     {
       "number": "9",
