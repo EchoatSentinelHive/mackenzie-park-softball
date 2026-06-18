@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-18T18:41:50.378228Z",
+  "generated": "2026-06-18T21:09:29.516468Z",
   "roster": [
     {
       "number": "3",
@@ -154,18 +154,6 @@
     {
       "number": "",
       "name": "Pickup 1",
-      "position": "SS",
-      "position2": "P",
-      "bats": "R",
-      "throws": "R",
-      "notes": "",
-      "nickname": "",
-      "bio": "",
-      "photo_url": ""
-    },
-    {
-      "number": "",
-      "name": "Pickup 2",
       "position": "SS",
       "position2": "P",
       "bats": "R",
@@ -526,22 +514,6 @@
       "obp": ".583",
       "slg": ".167"
     },
-    "Gavin Dudley": {
-      "AB": 0,
-      "1B": 0,
-      "2B": 0,
-      "3B": 0,
-      "HR": 0,
-      "RBI": 0,
-      "BB": 0,
-      "K": 0,
-      "R": 0,
-      "E": 0,
-      "games": 0,
-      "avg": ".000",
-      "obp": ".000",
-      "slg": ".000"
-    },
     "Declan Sullivan": {
       "AB": 4,
       "1B": 0,
@@ -623,6 +595,22 @@
       "slg": ".000"
     },
     "Pickup 2": {
+      "AB": 0,
+      "1B": 0,
+      "2B": 0,
+      "3B": 0,
+      "HR": 0,
+      "RBI": 0,
+      "BB": 0,
+      "K": 0,
+      "R": 0,
+      "E": 0,
+      "games": 0,
+      "avg": ".000",
+      "obp": ".000",
+      "slg": ".000"
+    },
+    "Gavin Dudley": {
       "AB": 0,
       "1B": 0,
       "2B": 0,
