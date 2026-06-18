@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-18T18:06:08.427899Z",
+  "generated": "2026-06-18T18:06:24.802036Z",
   "roster": [
     {
       "number": "3",
@@ -132,6 +132,18 @@
       "name": "Jackson Adkins",
       "position": "SS",
       "position2": "RCF",
+      "bats": "R",
+      "throws": "R",
+      "notes": "",
+      "nickname": "",
+      "bio": "",
+      "photo_url": ""
+    },
+    {
+      "number": "",
+      "name": "Sam Borely",
+      "position": "SS",
+      "position2": "P",
       "bats": "R",
       "throws": "R",
       "notes": "",
