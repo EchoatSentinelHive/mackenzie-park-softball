@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-18T18:06:24.802036Z",
+  "generated": "2026-06-18T18:06:41.636369Z",
   "roster": [
     {
       "number": "3",
@@ -142,6 +142,18 @@
     {
       "number": "",
       "name": "Sam Borely",
+      "position": "SS",
+      "position2": "P",
+      "bats": "R",
+      "throws": "R",
+      "notes": "",
+      "nickname": "",
+      "bio": "",
+      "photo_url": ""
+    },
+    {
+      "number": "",
+      "name": "Pickup 1",
       "position": "SS",
       "position2": "P",
       "bats": "R",
