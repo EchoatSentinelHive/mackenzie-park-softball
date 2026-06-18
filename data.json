@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-18T21:09:29.516468Z",
+  "generated": "2026-06-18T21:09:53.906233Z",
   "roster": [
     {
       "number": "3",
@@ -153,13 +153,13 @@
     },
     {
       "number": "",
-      "name": "Pickup 1",
-      "position": "SS",
-      "position2": "P",
+      "name": "Mackenzie",
+      "position": "2B",
+      "position2": "RF",
       "bats": "R",
       "throws": "R",
       "notes": "",
-      "nickname": "",
+      "nickname": "Little Mac",
       "bio": "",
       "photo_url": ""
     }
