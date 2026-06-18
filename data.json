@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-17T13:50:28.576481Z",
+  "generated": "2026-06-18T18:06:08.427899Z",
   "roster": [
     {
       "number": "3",
@@ -120,6 +120,18 @@
       "name": "Luke (Pickup)",
       "position": "",
       "position2": "",
+      "bats": "R",
+      "throws": "R",
+      "notes": "",
+      "nickname": "",
+      "bio": "",
+      "photo_url": ""
+    },
+    {
+      "number": "",
+      "name": "Jackson Adkins",
+      "position": "SS",
+      "position2": "RCF",
       "bats": "R",
       "throws": "R",
       "notes": "",
