@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-18T18:06:41.636369Z",
+  "generated": "2026-06-18T18:06:48.092547Z",
   "roster": [
     {
       "number": "3",
@@ -154,6 +154,18 @@
     {
       "number": "",
       "name": "Pickup 1",
+      "position": "SS",
+      "position2": "P",
+      "bats": "R",
+      "throws": "R",
+      "notes": "",
+      "nickname": "",
+      "bio": "",
+      "photo_url": ""
+    },
+    {
+      "number": "",
+      "name": "Pickup 2",
       "position": "SS",
       "position2": "P",
       "bats": "R",
