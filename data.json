@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-05T13:11:31.694193Z",
+  "generated": "2026-07-05T13:40:44.379334Z",
   "roster": [
     {
       "number": "3",
@@ -161,7 +161,8 @@
       "notes": "",
       "nickname": "Little Mac",
       "bio": "",
-      "photo_url": ""
+      "photo_url": "",
+      "callup": true
     }
   ],
   "schedule": [
