@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-05T13:40:53.978777Z",
+  "generated": "2026-07-05T13:41:03.812212Z",
   "roster": [
     {
       "number": "3",
@@ -125,7 +125,8 @@
       "notes": "",
       "nickname": "",
       "bio": "",
-      "photo_url": ""
+      "photo_url": "",
+      "callup": true
     },
     {
       "number": "",
