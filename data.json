@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T15:54:27.372032Z",
+  "generated": "2026-07-07T18:06:36.226429Z",
   "roster": [
     {
       "number": "3",
@@ -8,7 +8,11 @@
       "position2": "P",
       "bats": "R",
       "throws": "R",
-      "notes": "Strong arm, good glove, good knowledge"
+      "notes": "Strong arm, good glove, good knowledge",
+      "nickname": "",
+      "bio": "",
+      "photo_url": "/player_photos/willow_norton.jpeg",
+      "callup": false
     },
     {
       "number": "17",
