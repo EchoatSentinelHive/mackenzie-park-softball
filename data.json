@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T18:06:51.162388Z",
+  "generated": "2026-07-07T18:09:39.606485Z",
   "roster": [
     {
       "number": "3",
@@ -33,7 +33,8 @@
       "notes": "Great Glove, Good Bat, Good Knowledge",
       "nickname": "",
       "bio": "",
-      "photo_url": ""
+      "photo_url": "/player_photos/teague_sullivan.jpeg",
+      "callup": false
     },
     {
       "number": "24/25",
