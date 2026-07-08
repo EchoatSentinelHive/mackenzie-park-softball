@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T06:30:12.159308Z",
+  "generated": "2026-07-08T11:04:10.619505Z",
   "roster": [
     {
       "number": "3",
@@ -270,7 +270,7 @@
       "time": "20:30",
       "opponent": "Harman",
       "location": "",
-      "result": ""
+      "result": "W"
     },
     {
       "id": "game_1781313564453",
@@ -653,7 +653,7 @@
     }
   },
   "record": {
-    "wins": 9,
+    "wins": 10,
     "losses": 1
   }
 }
