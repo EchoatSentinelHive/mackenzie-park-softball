@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T11:04:12.562029Z",
+  "generated": "2026-07-08T11:04:25.493188Z",
   "roster": [
     {
       "number": "3",
@@ -270,7 +270,8 @@
       "time": "20:30",
       "opponent": "Harman",
       "location": "",
-      "result": "W"
+      "result": "W",
+      "score": "20-2"
     },
     {
       "id": "game_1781313564453",
