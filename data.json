@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-12T06:30:10.954326Z",
+  "generated": "2026-07-22T06:30:07.181531Z",
   "roster": [
     {
       "number": "3",
@@ -274,29 +274,13 @@
       "score": "20-2"
     },
     {
-      "id": "game_1781313564453",
-      "date": "2026-07-09",
-      "time": "18:30",
-      "opponent": "Woodview",
-      "location": "Alex 2 (Home)",
-      "result": "",
-      "score": ""
-    },
-    {
       "id": "game_1781313649552",
       "date": "2026-07-14",
       "time": "20:30",
       "opponent": "Woodview",
       "location": "Woodview (Away)",
-      "result": ""
-    },
-    {
-      "id": "game_1781314176920",
-      "date": "2026-07-16",
-      "time": "18:30",
-      "opponent": "Harman",
-      "location": "Alex 2(Away)",
-      "result": ""
+      "result": "W",
+      "score": "8-5"
     },
     {
       "id": "game_1781314250448",
@@ -654,7 +638,7 @@
     }
   },
   "record": {
-    "wins": 10,
+    "wins": 11,
     "losses": 1
   }
 }
