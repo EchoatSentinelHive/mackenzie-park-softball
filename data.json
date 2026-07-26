@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26T16:57:58.775962Z",
+  "generated": "2026-07-26T16:59:13.171021Z",
   "roster": [
     {
       "number": "3",
@@ -283,22 +283,12 @@
       "score": "8-5"
     },
     {
-      "id": "game_1781314250448",
-      "date": "2026-08-07",
+      "id": "game_1785085153141",
+      "date": "2026-07-26",
       "time": "18:30",
       "opponent": "Woodview",
-      "location": "Woodview(Home)",
-      "result": "",
-      "score": ""
-    },
-    {
-      "id": "game_1781314317023",
-      "date": "2026-08-07",
-      "time": "20:30",
-      "opponent": "Harman",
-      "location": "Woodview(Home)",
-      "result": "",
-      "score": ""
+      "location": "Nipigon",
+      "result": ""
     },
     {
       "id": "game_1781314439522",
@@ -331,6 +321,24 @@
       "opponent": "Harman",
       "location": "Alex 2 (Away)",
       "result": ""
+    },
+    {
+      "id": "game_1781314250448",
+      "date": "2026-08-07",
+      "time": "18:30",
+      "opponent": "Woodview",
+      "location": "Woodview(Home)",
+      "result": "",
+      "score": ""
+    },
+    {
+      "id": "game_1781314317023",
+      "date": "2026-08-07",
+      "time": "20:30",
+      "opponent": "Harman",
+      "location": "Woodview(Home)",
+      "result": "",
+      "score": ""
     },
     {
       "id": "game_1781314954946",
