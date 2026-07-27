@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T00:24:57.584924Z",
+  "generated": "2026-07-27T00:29:01.131835Z",
   "roster": [
     {
       "number": "3",
@@ -288,7 +288,8 @@
       "time": "18:30",
       "opponent": "Woodview",
       "location": "Nipigon",
-      "result": "W 19-14"
+      "result": "W 19-14",
+      "score": "19-14"
     },
     {
       "id": "game_1781314439522",
