@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T00:24:44.582151Z",
+  "generated": "2026-07-27T00:24:46.656434Z",
   "roster": [
     {
       "number": "3",
@@ -288,7 +288,7 @@
       "time": "18:30",
       "opponent": "Woodview",
       "location": "Nipigon",
-      "result": ""
+      "result": "W 19-14"
     },
     {
       "id": "game_1781314439522",
@@ -648,7 +648,7 @@
     }
   },
   "record": {
-    "wins": 11,
+    "wins": 12,
     "losses": 1
   }
 }
