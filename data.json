@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T02:11:45.677470Z",
+  "generated": "2026-07-29T02:11:47.583648Z",
   "roster": [
     {
       "number": "3",
@@ -297,7 +297,7 @@
       "time": "20:30",
       "opponent": "Harman",
       "location": "Woodview(Away)",
-      "result": ""
+      "result": "W 20-3"
     },
     {
       "id": "game_1781314518805",
@@ -649,7 +649,7 @@
     }
   },
   "record": {
-    "wins": 12,
+    "wins": 13,
     "losses": 1
   }
 }
