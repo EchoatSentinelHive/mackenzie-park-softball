@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-30T06:30:02.184740Z",
+  "generated": "2026-07-30T20:17:26.992512Z",
   "roster": [
     {
       "number": "3",
@@ -297,7 +297,8 @@
       "time": "20:30",
       "opponent": "Harman",
       "location": "Woodview(Away)",
-      "result": "W 20-3"
+      "result": "W 20-3",
+      "score": "20-3"
     },
     {
       "id": "game_1781314518805",
