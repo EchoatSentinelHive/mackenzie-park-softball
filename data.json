@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-31T00:15:45.846973Z",
+  "generated": "2026-07-31T00:15:47.682531Z",
   "roster": [
     {
       "number": "3",
@@ -306,7 +306,7 @@
       "time": "18:30",
       "opponent": "Woodview",
       "location": "Alex 2 (Home)",
-      "result": ""
+      "result": "W 8-5"
     },
     {
       "id": "game_1781314810967",
@@ -650,7 +650,7 @@
     }
   },
   "record": {
-    "wins": 13,
+    "wins": 14,
     "losses": 1
   }
 }
