@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-05T06:30:23.874974Z",
+  "generated": "2026-08-05T14:48:45.888164Z",
   "roster": [
     {
       "number": "3",
@@ -315,7 +315,8 @@
       "time": "18:30",
       "opponent": "Woodview",
       "location": "Woodview (Away)",
-      "result": "W 18-7"
+      "result": "W 18-7",
+      "score": "18-7"
     },
     {
       "id": "game_1781314895815",
