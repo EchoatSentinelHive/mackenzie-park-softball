@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T06:30:10.885290Z",
+  "generated": "2026-08-06T20:17:14.065007Z",
   "roster": [
     {
       "number": "3",
@@ -12,7 +12,9 @@
       "nickname": "",
       "bio": "",
       "photo_url": "/player_photos/willow_norton.jpeg",
-      "callup": false
+      "callup": false,
+      "photo_url2": "/player_photos/willow_norton.jpeg",
+      "photo_url3": ""
     },
     {
       "number": "17",
