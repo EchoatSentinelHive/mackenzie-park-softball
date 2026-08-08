@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T03:19:59.534937Z",
+  "generated": "2026-08-08T03:20:01.522550Z",
   "roster": [
     {
       "number": "3",
@@ -344,7 +344,7 @@
       "time": "20:30",
       "opponent": "Harman",
       "location": "Woodview(Home)",
-      "result": "",
+      "result": "W 10-8",
       "score": ""
     },
     {
@@ -655,7 +655,7 @@
     }
   },
   "record": {
-    "wins": 17,
+    "wins": 18,
     "losses": 1
   }
 }
