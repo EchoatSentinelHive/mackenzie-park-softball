@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T17:14:49.367592Z",
+  "generated": "2026-08-09T17:16:45.039893Z",
   "roster": [
     {
       "number": "3",
@@ -390,6 +390,14 @@
       "location": "Woodview(Home)",
       "result": "W 10-8",
       "score": "10-8"
+    },
+    {
+      "id": "game_1786295805020",
+      "date": "2026-08-09",
+      "time": "18:30",
+      "opponent": "Harman",
+      "location": "Nipigon Park",
+      "result": ""
     },
     {
       "id": "game_1781314954946",
