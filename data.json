@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T14:44:13.563948Z",
+  "generated": "2026-08-09T14:44:52.246284Z",
   "roster": [
     {
       "number": "3",
@@ -131,7 +131,10 @@
       "notes": "Strong arm, strong bat, good knowledge",
       "nickname": "",
       "bio": "",
-      "photo_url": ""
+      "photo_url": "/player_photos/dylan_hurbert.jpeg",
+      "photo_url2": "/player_photos/dylan_hurbert_2.jpeg",
+      "photo_url3": "",
+      "callup": false
     },
     {
       "number": "4",
