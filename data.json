@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T14:42:29.546042Z",
+  "generated": "2026-08-09T14:43:26.244380Z",
   "roster": [
     {
       "number": "3",
@@ -86,7 +86,10 @@
       "notes": "Newer but has potential",
       "nickname": "",
       "bio": "",
-      "photo_url": ""
+      "photo_url": "/player_photos/logan_bradly.jpeg",
+      "photo_url2": "",
+      "photo_url3": "",
+      "callup": false
     },
     {
       "number": "10",
