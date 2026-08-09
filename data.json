@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T14:41:56.286261Z",
+  "generated": "2026-08-09T14:42:29.546042Z",
   "roster": [
     {
       "number": "3",
@@ -68,7 +68,13 @@
       "position2": "SS",
       "bats": "L",
       "throws": "R",
-      "notes": "Strong all around"
+      "notes": "Strong all around",
+      "photo_url2": "",
+      "photo_url3": "",
+      "nickname": "",
+      "bio": "",
+      "photo_url": "/player_photos/tyson_leduc.jpeg",
+      "callup": false
     },
     {
       "number": "6",
