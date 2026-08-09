@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T14:34:52.692583Z",
+  "generated": "2026-08-09T14:36:29.050540Z",
   "roster": [
     {
       "number": "3",
@@ -42,7 +42,9 @@
       "nickname": "",
       "bio": "",
       "photo_url": "/player_photos/teague_sullivan.jpeg",
-      "callup": false
+      "callup": false,
+      "photo_url2": "/player_photos/teague_sullivan_2.jpeg",
+      "photo_url3": ""
     },
     {
       "number": "24/25",
