@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T14:44:52.246284Z",
+  "generated": "2026-08-09T14:45:25.494518Z",
   "roster": [
     {
       "number": "3",
@@ -143,7 +143,13 @@
       "position2": "RF",
       "bats": "R",
       "throws": "R",
-      "notes": ""
+      "notes": "",
+      "photo_url2": "/player_photos/carlee_longbottom_2.jpeg",
+      "photo_url3": "",
+      "nickname": "",
+      "bio": "",
+      "photo_url": "/player_photos/carlee_longbottom.jpeg",
+      "callup": false
     },
     {
       "number": "1",
