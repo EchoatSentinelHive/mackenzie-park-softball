@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T14:43:26.244380Z",
+  "generated": "2026-08-09T14:44:13.563948Z",
   "roster": [
     {
       "number": "3",
@@ -116,7 +116,10 @@
       "notes": "Consistent glove, decent arm, ok bat",
       "nickname": "",
       "bio": "",
-      "photo_url": ""
+      "photo_url": "/player_photos/siobhan_sasseville.jpeg",
+      "photo_url2": "/player_photos/siobhan_sasseville_2.jpeg",
+      "photo_url3": "",
+      "callup": false
     },
     {
       "number": "53",
