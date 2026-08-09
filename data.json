@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T14:33:53.987754Z",
+  "generated": "2026-08-09T14:34:52.692583Z",
   "roster": [
     {
       "number": "3",
@@ -23,7 +23,13 @@
       "position2": "RCF",
       "bats": "L",
       "throws": "R",
-      "notes": "Strong bat, Good Glove"
+      "notes": "Strong bat, Good Glove",
+      "photo_url2": "/player_photos/ben_keene_2.jpeg",
+      "photo_url3": "",
+      "nickname": "",
+      "bio": "",
+      "photo_url": "/player_photos/ben_keene.jpeg",
+      "callup": false
     },
     {
       "number": "40",
