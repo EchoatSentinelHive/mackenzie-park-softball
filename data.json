@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T14:38:56.803998Z",
+  "generated": "2026-08-09T14:41:56.286261Z",
   "roster": [
     {
       "number": "3",
@@ -89,7 +89,13 @@
       "position2": "SS",
       "bats": "R",
       "throws": "R",
-      "notes": "Strong all around Strong pitcher"
+      "notes": "Strong all around Strong pitcher",
+      "photo_url2": "",
+      "photo_url3": "",
+      "nickname": "",
+      "bio": "",
+      "photo_url": "/player_photos/emmett_riviere.jpeg",
+      "callup": false
     },
     {
       "number": "39",
