@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-10T06:30:16.588692Z",
+  "generated": "2026-08-10T14:12:10.396345Z",
   "roster": [
     {
       "number": "3",
@@ -397,7 +397,7 @@
       "time": "18:30",
       "opponent": "Harman",
       "location": "Nipigon Park",
-      "result": ""
+      "result": "W 4-3"
     },
     {
       "id": "game_1781314954946",
@@ -536,13 +536,13 @@
       "3B": 0,
       "HR": 0,
       "RBI": 6,
-      "BB": 15,
+      "BB": 16,
       "K": 2,
-      "R": 15,
+      "R": 16,
       "E": 0,
       "games": 16,
       "avg": ".273",
-      "obp": ".500",
+      "obp": ".510",
       "slg": ".303"
     },
     "Dylan Hurbert": {
@@ -707,7 +707,7 @@
     }
   },
   "record": {
-    "wins": 18,
+    "wins": 19,
     "losses": 1
   }
 }
