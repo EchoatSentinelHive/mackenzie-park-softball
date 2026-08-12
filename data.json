@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12T01:59:52.383605Z",
+  "generated": "2026-08-12T01:59:54.214923Z",
   "roster": [
     {
       "number": "3",
@@ -415,7 +415,7 @@
       "time": "20:30",
       "opponent": "Woodview",
       "location": "Woodview (Home)",
-      "result": ""
+      "result": "W 15-1"
     }
   ],
   "career_stats": {
@@ -709,7 +709,7 @@
     }
   },
   "record": {
-    "wins": 20,
+    "wins": 21,
     "losses": 1
   }
 }
