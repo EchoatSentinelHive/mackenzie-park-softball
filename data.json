@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-13T14:19:47.614881Z",
+  "generated": "2026-08-13T14:20:36.825121Z",
   "roster": [
     {
       "number": "3",
@@ -87,8 +87,8 @@
       "nickname": "",
       "bio": "",
       "photo_url": "/player_photos/logan_bradly.jpeg",
-      "photo_url2": "",
-      "photo_url3": "",
+      "photo_url2": "/player_photos/logan_bradly_2.jpeg",
+      "photo_url3": "/player_photos/logan_bradly_3.jpeg",
       "callup": false
     },
     {
