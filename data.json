@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T13:24:16.321830Z",
+  "generated": "2026-08-14T13:24:46.597155Z",
   "roster": [
     {
       "number": "3",
@@ -424,6 +424,14 @@
       "time": "18:30",
       "opponent": "Woodview",
       "location": "Alex 1",
+      "result": ""
+    },
+    {
+      "id": "game_1786713886578",
+      "date": "2026-08-15",
+      "time": "11:30",
+      "opponent": "Harman",
+      "location": "Alex1",
       "result": ""
     }
   ],
