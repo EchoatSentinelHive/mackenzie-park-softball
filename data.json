@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T17:08:41.037929Z",
+  "generated": "2026-08-16T17:08:42.920025Z",
   "roster": [
     {
       "number": "3",
@@ -458,7 +458,7 @@
       "time": "11:30",
       "opponent": "Harman",
       "location": "Alex 1",
-      "result": ""
+      "result": "W 13-1"
     }
   ],
   "career_stats": {
@@ -752,7 +752,7 @@
     }
   },
   "record": {
-    "wins": 24,
+    "wins": 25,
     "losses": 1
   }
 }
